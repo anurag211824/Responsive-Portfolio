@@ -439,4 +439,9 @@ progress::-moz-progress-bar {
     line-height: 2.5rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box-shadow for better visibility */
   }
+  .section-heading{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 6px;
+  }
 }
