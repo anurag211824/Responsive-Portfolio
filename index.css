@@ -135,7 +135,8 @@ body {
 .section-projects,
 .section-skills,
 .section-contact {
-  margin-bottom: 3rem;
+margin-bottom: 3rem;
+
 }
 /* ...........Hero section................................ */
 .section-hero {
@@ -145,6 +146,7 @@ body {
   flex-direction: column;
   justify-content: start;
   text-align: left;
+  
 }
 
 .home-content {
@@ -363,7 +365,6 @@ progress::-moz-progress-bar {
 @media (max-width: 595px) {
   body {
     overflow-x: hidden;
-    padding-top: 35rem;
   }
 
   .header {
@@ -394,15 +395,18 @@ progress::-moz-progress-bar {
     justify-items: center;
     align-items: center;
     gap: 2rem;
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   .profile-pic {
-    height: 20rem;
+    height: 27rem;
   }
 
   .section-hero {
     padding: 3rem;
     font-size: 2rem;
+   
   }
 
   .intro {
