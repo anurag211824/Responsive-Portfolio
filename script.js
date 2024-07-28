@@ -2,7 +2,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const header = document.querySelector(".header");
   const navbarLinks = document.querySelectorAll(".navbar-link");
   const navbar = document.querySelector(".navbar");
-  const navIcons = document.querySelectorAll(".mobile-nav-icon");
+  const hamburger = document.querySelector(".hamburger");
+  const closeBtn = document.querySelector(".close-btn");
 
   // Smooth scrolling for navigation links
   navbarLinks.forEach((link) => {
@@ -14,8 +15,18 @@ document.addEventListener("DOMContentLoaded", function () {
         top: targetSection.offsetTop - header.offsetHeight,
         behavior: "smooth",
       });
+      navbar.classList.remove("open"); // Close navbar on link click
     });
   });
+  
+    hamburger.addEventListener("click", function() {
+      navbar.classList.add("open");
+    });
+  
+    closeBtn.addEventListener("click", function() {
+      navbar.classList.remove("open");
+    });
+  
 
   // Form submission handling
   const contactForm = document.getElementById("contact-form");
