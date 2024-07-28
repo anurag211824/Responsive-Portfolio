@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
   contactForm.addEventListener("submit", function (event) {
     event.preventDefault();
     const formData = new FormData(contactForm);
-    alert(`Name: ${formData.get("name")}\nEmail: ${formData.get("email")}\nMessage: ${formData.get("message")}`);
+    alert(`Name: ${formData.get("name")}\nEmail: ${formData.get("ak06666664@gmail.com")}\nMessage: ${formData.get("message")}`);
     contactForm.reset();
   });
 });
