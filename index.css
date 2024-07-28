@@ -138,6 +138,11 @@ body {
 margin-bottom: 3rem;
 
 }
+.section-heading{
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
 /* ...........Hero section................................ */
 .section-hero {
   padding: 5rem;
