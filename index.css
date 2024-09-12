@@ -87,6 +87,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
+    right:0;
     width: 100%;
     height: 100%;
     background: rgb(88, 88, 235);
@@ -102,6 +103,7 @@ body {
   }
 
   .navbar-list {
+    display: flex;
     flex-direction: column;
     gap: 2rem;
   }
@@ -135,7 +137,13 @@ body {
 .section-projects,
 .section-skills,
 .section-contact {
-  margin-bottom: 3rem;
+margin-bottom: 3rem;
+
+}
+.section-heading{
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 10px;
 }
 /* ...........Hero section................................ */
 .section-hero {
@@ -145,6 +153,7 @@ body {
   flex-direction: column;
   justify-content: start;
   text-align: left;
+  
 }
 
 .home-content {
@@ -183,6 +192,7 @@ body {
 
 /* ...........Projects section................................ */
 .projects-content {
+  margin-top: -5px;
   display: flex;
   flex-direction: row;
   padding: 10rem;
@@ -363,7 +373,6 @@ progress::-moz-progress-bar {
 @media (max-width: 595px) {
   body {
     overflow-x: hidden;
-    padding-top: 35rem;
   }
 
   .header {
@@ -394,15 +403,18 @@ progress::-moz-progress-bar {
     justify-items: center;
     align-items: center;
     gap: 2rem;
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   .profile-pic {
-    height: 20rem;
+    height: 27rem;
   }
 
   .section-hero {
     padding: 3rem;
     font-size: 2rem;
+   
   }
 
   .intro {
@@ -429,5 +441,10 @@ progress::-moz-progress-bar {
     padding: 3rem; /* Increased padding */
     line-height: 2.5rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box-shadow for better visibility */
+  }
+  .section-heading{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 6px;
   }
 }
