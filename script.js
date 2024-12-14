@@ -37,3 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
     contactForm.reset();
   });
 });
+
+
+
+//this is a test comment
